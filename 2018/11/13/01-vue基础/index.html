@@ -14,17 +14,23 @@
 <meta name="author" content="Nhgg">
 
 
-    
-    
 
-
-<meta property="og:type" content="website">
+<meta name="description" content="Vue基础相关概念混合开发和前后端分离 混合开发(服务器端渲染)  前后端分离后端提供接口，前端开发界面效果(专注于用户的交互)   库和框架 库 库提供大量API，需要自己调用这些API简化开发。  框架 框架提供了一些基础服务，一般不需要自己调用，会自动完成一些基本功能。   什么是Vue什么是Vue 一款非常优秀的前端 JavaScript 框架，由尤雨溪创建开发  可以轻松构建单页 (SP">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/11/13/01-vue基础/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Vue基础相关概念混合开发和前后端分离 混合开发(服务器端渲染)  前后端分离后端提供接口，前端开发界面效果(专注于用户的交互)   库和框架 库 库提供大量API，需要自己调用这些API简化开发。  框架 框架提供了一些基础服务，一般不需要自己调用，会自动完成一些基本功能。   什么是Vue什么是Vue 一款非常优秀的前端 JavaScript 框架，由尤雨溪创建开发  可以轻松构建单页 (SP">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2018/11/13/01-vue基础/media/MVVMPattern.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/13/01-vue基础/media/components.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/13/01-vue基础/media/b25efd3e8af188b5ab36ccb66baddd71_hd.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/11/13/01-vue基础/media/image-20180526145007221.png">
+<meta property="og:updated_time" content="2018-11-05T00:55:55.527Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="Vue基础相关概念混合开发和前后端分离 混合开发(服务器端渲染)  前后端分离后端提供接口，前端开发界面效果(专注于用户的交互)   库和框架 库 库提供大量API，需要自己调用这些API简化开发。  框架 框架提供了一些基础服务，一般不需要自己调用，会自动完成一些基本功能。   什么是Vue什么是Vue 一款非常优秀的前端 JavaScript 框架，由尤雨溪创建开发  可以轻松构建单页 (SP">
+<meta name="twitter:image" content="http://yoursite.com/2018/11/13/01-vue基础/media/MVVMPattern.png">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -52,8 +58,6 @@
 <link rel="stylesheet" href="/css/style.css">
 
 
-    <style> .article { opacity: 0;} </style>
-
 
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
@@ -67,8 +71,8 @@
     var yiliaConfig = {
         fancybox: true,
         animate: true,
-        isHome: true,
-        isPost: false,
+        isHome: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -258,9 +262,7 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-01-vue基础" class="article article-type-post" itemscope="" itemprop="blogPost">
+      <div class="body-wrap"><article id="post-01-vue基础" class="article article-type-post" itemscope="" itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2018/11/13/01-vue基础/" class="article-date">
@@ -1022,148 +1024,119 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/11/13/01-vue基础/"></a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">Nhgg</a></p>
+        <p><span>发布时间:</span>2018-11-13, 14:25:02</p>
+        <p><span>最后更新:</span>2018-11-05, 08:55:55</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/11/13/01-vue基础/" title="">http://yoursite.com/2018/11/13/01-vue基础/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/11/13/01-vue基础/　　作者: Nhgg" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2018/11/13/test/">
+                    test
+                </a>
+            </div>
+        
+    </nav>
+
   
 </article>
 
-
-
-
-
-
-
-
-
-  
-    <article id="post-test" class="article article-type-post" itemscope="" itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/11/13/test/" class="article-date">
-      <time datetime="2018-11-13T06:14:24.000Z" itemprop="datePublished">2018-11-13</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy">
-    
-    
-      <header class="article-header">
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/13/test/">test</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Vue基础"><span class="toc-number">1.</span> <span class="toc-text">Vue基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#相关概念"><span class="toc-number">1.1.</span> <span class="toc-text">相关概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#混合开发和前后端分离"><span class="toc-number">1.1.1.</span> <span class="toc-text">混合开发和前后端分离</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#库和框架"><span class="toc-number">1.1.2.</span> <span class="toc-text">库和框架</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是Vue"><span class="toc-number">1.2.</span> <span class="toc-text">什么是Vue</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是Vue-1"><span class="toc-number">1.2.1.</span> <span class="toc-text">什么是Vue</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vue的特点"><span class="toc-number">1.2.2.</span> <span class="toc-text">Vue的特点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue初体验"><span class="toc-number">1.3.</span> <span class="toc-text">Vue初体验</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Vue"><span class="toc-number">1.4.</span> <span class="toc-text">安装Vue</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#下载Vue"><span class="toc-number">1.4.1.</span> <span class="toc-text">下载Vue</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hello-World"><span class="toc-number">1.4.2.</span> <span class="toc-text">Hello World</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue实例"><span class="toc-number">1.5.</span> <span class="toc-text">Vue实例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建Vue实例"><span class="toc-number">1.5.1.</span> <span class="toc-text">创建Vue实例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#模板语法"><span class="toc-number">1.6.</span> <span class="toc-text">模板语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#插值表达式"><span class="toc-number">1.6.1.</span> <span class="toc-text">插值表达式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JavaScript表达式"><span class="toc-number">1.6.2.</span> <span class="toc-text">JavaScript表达式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#指令"><span class="toc-number">1.7.</span> <span class="toc-text">指令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#v-html-v-text"><span class="toc-number">1.7.1.</span> <span class="toc-text">v-html/v-text</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-bind"><span class="toc-number">1.7.2.</span> <span class="toc-text">v-bind</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-model"><span class="toc-number">1.7.3.</span> <span class="toc-text">v-model</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-on"><span class="toc-number">1.7.4.</span> <span class="toc-text">v-on</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-show"><span class="toc-number">1.7.5.</span> <span class="toc-text">v-show</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-if"><span class="toc-number">1.7.6.</span> <span class="toc-text">v-if</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-for"><span class="toc-number">1.7.7.</span> <span class="toc-text">v-for</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-cloak"><span class="toc-number">1.7.8.</span> <span class="toc-text">v-cloak</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#v-once"><span class="toc-number">1.7.9.</span> <span class="toc-text">v-once</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue的选项对象"><span class="toc-number">1.8.</span> <span class="toc-text">Vue的选项对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#案例：表格操作"><span class="toc-number">1.9.</span> <span class="toc-text">案例：表格操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DevTools"><span class="toc-number">1.10.</span> <span class="toc-text">DevTools</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MVVM"><span class="toc-number">1.11.</span> <span class="toc-text">MVVM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其它知识点"><span class="toc-number">1.12.</span> <span class="toc-text">其它知识点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#过滤器"><span class="toc-number">1.12.1.</span> <span class="toc-text">过滤器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#计算属性"><span class="toc-number">1.12.2.</span> <span class="toc-text">计算属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ref"><span class="toc-number">1.12.3.</span> <span class="toc-text">ref</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义指令"><span class="toc-number">1.12.4.</span> <span class="toc-text">自定义指令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#发送网络请求"><span class="toc-number">1.13.</span> <span class="toc-text">发送网络请求</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#axios"><span class="toc-number">1.13.1.</span> <span class="toc-text">axios</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#表格案例"><span class="toc-number">1.13.2.</span> <span class="toc-text">表格案例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#过渡和动画"><span class="toc-number">1.14.</span> <span class="toc-text">过渡和动画</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#在-CSS-过渡和动画中自动应用-class"><span class="toc-number">1.14.1.</span> <span class="toc-text">在 CSS 过渡和动画中自动应用 class</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义过渡动画的类名"><span class="toc-number">1.14.2.</span> <span class="toc-text">自定义过渡动画的类名</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#组件"><span class="toc-number">1.15.</span> <span class="toc-text">组件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是组件"><span class="toc-number">1.15.1.</span> <span class="toc-text">什么是组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#组件和模块"><span class="toc-number">1.15.2.</span> <span class="toc-text">组件和模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vue中的组件开发"><span class="toc-number">1.15.3.</span> <span class="toc-text">Vue中的组件开发</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#全局组件"><span class="toc-number">1.15.3.1.</span> <span class="toc-text">全局组件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#私有组件"><span class="toc-number">1.15.3.2.</span> <span class="toc-text">私有组件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#通过Props给子组件传值"><span class="toc-number">1.15.3.3.</span> <span class="toc-text">通过Props给子组件传值</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue实例的生命周期"><span class="toc-number">1.16.</span> <span class="toc-text">Vue实例的生命周期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#前端路由"><span class="toc-number">1.17.</span> <span class="toc-text">前端路由</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#单页应用"><span class="toc-number">1.17.1.</span> <span class="toc-text">单页应用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#vue-router"><span class="toc-number">1.17.2.</span> <span class="toc-text">vue-router</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#快速体验"><span class="toc-number">1.17.2.1.</span> <span class="toc-text">快速体验</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#动态路由匹配"><span class="toc-number">1.17.2.2.</span> <span class="toc-text">动态路由匹配</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#webpack"><span class="toc-number">1.18.</span> <span class="toc-text">webpack</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装webpack"><span class="toc-number">1.18.1.</span> <span class="toc-text">安装webpack</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#快速实践"><span class="toc-number">1.18.2.</span> <span class="toc-text">快速实践</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置文件-webpack-config-js"><span class="toc-number">1.18.3.</span> <span class="toc-text">配置文件 webpack.config.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#webpack常用的Loader"><span class="toc-number">1.18.4.</span> <span class="toc-text">webpack常用的Loader</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#打包CSS"><span class="toc-number">1.18.4.1.</span> <span class="toc-text">打包CSS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#打包less"><span class="toc-number">1.18.4.2.</span> <span class="toc-text">打包less</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#打包sass"><span class="toc-number">1.18.4.3.</span> <span class="toc-text">打包sass</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#加载图片"><span class="toc-number">1.18.4.4.</span> <span class="toc-text">加载图片</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#加载字体"><span class="toc-number">1.18.4.5.</span> <span class="toc-text">加载字体</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#webpack常用插件"><span class="toc-number">1.18.5.</span> <span class="toc-text">webpack常用插件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#HtmlWebpackPlugin"><span class="toc-number">1.18.5.1.</span> <span class="toc-text">HtmlWebpackPlugin</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CleanWebpackPlugin"><span class="toc-number">1.18.5.2.</span> <span class="toc-text">CleanWebpackPlugin</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#使用source-map"><span class="toc-number">1.18.5.3.</span> <span class="toc-text">使用source map</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#使用-webpack-dev-server"><span class="toc-number">1.18.5.4.</span> <span class="toc-text">使用 webpack-dev-server</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#启用HMR"><span class="toc-number">1.18.5.5.</span> <span class="toc-text">启用HMR</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#综合案例"><span class="toc-number">1.19.</span> <span class="toc-text">综合案例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#单文件组件"><span class="toc-number">1.19.1.</span> <span class="toc-text">单文件组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#案例演示"><span class="toc-number">1.19.2.</span> <span class="toc-text">案例演示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#搭建项目结构"><span class="toc-number">1.19.3.</span> <span class="toc-text">搭建项目结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置根组件"><span class="toc-number">1.19.4.</span> <span class="toc-text">配置根组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#提取子组件"><span class="toc-number">1.19.5.</span> <span class="toc-text">提取子组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用-Vue-Router-实现页面导航管理"><span class="toc-number">1.19.6.</span> <span class="toc-text">使用 Vue-Router 实现页面导航管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JSON-Server"><span class="toc-number">1.19.7.</span> <span class="toc-text">JSON Server</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装"><span class="toc-number">1.19.7.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#使用"><span class="toc-number">1.19.7.2.</span> <span class="toc-text">使用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实现项目功能"><span class="toc-number">1.19.8.</span> <span class="toc-text">实现项目功能</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#英雄列表"><span class="toc-number">1.19.8.1.</span> <span class="toc-text">英雄列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#删除英雄"><span class="toc-number">1.19.8.2.</span> <span class="toc-text">删除英雄</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#添加英雄"><span class="toc-number">1.19.8.3.</span> <span class="toc-text">添加英雄</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#编辑英雄"><span class="toc-number">1.19.8.4.</span> <span class="toc-text">编辑英雄</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NPM-缓存安装"><span class="toc-number">1.20.</span> <span class="toc-text">NPM 缓存安装</span></a></li></ol></li></ol>
         
-      
     </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
     
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
+<div class="share">
     
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/11/13/hello-world/" class="article-date">
-      <time datetime="2018-11-13T02:51:36.105Z" itemprop="datePublished">2018-11-13</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"　| Hexo　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
     
-      <input type="hidden" class="isFancy">
+
     
+</div>
+
+
+
+
+
+
+
     
-      <header class="article-header">
+
+
+
+
+    <div class="scroll" id="post-nav-button">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/13/hello-world/">Hello World</a>
-    </h1>
-  
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
-      
+        
+            <a href="/2018/11/13/test/" title="下一篇: test">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
     </div>
-    
-    <div class="article-info article-info-index">
-      
-      
 
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/11/13/01-vue基础/">01-vue基础</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/11/13/test/">test</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/11/13/hello-world/">Hello World</a></li></ul>
 
 
 
 
-
-
-
-
-
-  
-  
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
